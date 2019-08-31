@@ -90,6 +90,12 @@ body {
   background-image: linear-gradient(122deg, #44dec5, #4ebcfa);
 }
 
+.chart {
+  width: 967px;
+  height: 211px;
+  margin: 50px auto;
+}
+
 .content {
   border: 1px solid mediumaquamarine;
   width: 80%;
