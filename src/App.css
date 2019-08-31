@@ -15,11 +15,11 @@ body {
 }
 
 .sidebar {
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
   width: 277px;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(126deg, #a67eff, #5965ff);
+  background-image: linear-gradient(to bottom, #716dff, #a47dff);
   padding-left: 41px;
   padding-top: 140px;
 }
@@ -52,6 +52,42 @@ body {
 .profile-pic {
   width: 40px;
   height: 40px;
+}
+
+.delivery h1 {
+  margin-left: 40px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  width: 210px;
+  height: 165px;
+  border-radius: 8px;
+  background-image: linear-gradient(299deg, #736dff, #a97fff);
+}
+
+.card2 {
+  box-shadow: 0 2px 5px 0 rgba(83, 97, 255, 0.05);
+  background-image: linear-gradient(299deg, #f7c598, #ff8886);
+}
+
+.card3 {
+  box-shadow: 0 2px 5px 0 rgba(83, 97, 255, 0.05);
+  background-image: linear-gradient(123deg, #f9b4bd, #9573db);
+}
+
+.card4 {
+  box-shadow: 0 2px 5px 0 rgba(83, 97, 255, 0.05);
+  background-image: linear-gradient(122deg, #44dec5, #4ebcfa);
 }
 
 .content {

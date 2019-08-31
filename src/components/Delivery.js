@@ -7,7 +7,7 @@ const Delivery = () => {
       <Sidebar></Sidebar>
       <div className="delivery">
         <div className="searchbar">
-          <input type="text"></input>
+          <input type="text" placeholder="Type in to search"></input>
           <p>CLOUD FOUR - PRODUCTIONS</p>
           <img
             className="profile-pic"
@@ -16,6 +16,12 @@ const Delivery = () => {
           />
         </div>
         <h1>Realtime Message Data</h1>
+        <div className="boxes">
+          <div className="card1"></div>
+          <div className="card2"></div>
+          <div className="card3"></div>
+          <div className="card4"></div>
+        </div>
       </div>
     </div>
   );
