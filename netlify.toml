@@ -1,0 +1,4 @@
+[build]
+base = "merlindash/"
+publish = "merlindash/build/"
+command = "npm run build"
