@@ -14,16 +14,16 @@ import Users from './components/Users';
 
 function App() {
   return (
-    <div className="container">
+    <Fragment>
       {/* <Sidebar></Sidebar>
       <Content></Content> */}
       <Router>
         <Fragment>
-          <Route exact path="/" component={Dashboard}></Route>
+          <Route exact path="/" component={Delivery}></Route>
           <Switch>
             <Route exact path="/settings" component={Settings}></Route>
             <Route exact path="/users" component={Users}></Route>
-            <Route exact path="/delivery" component={Delivery}></Route>
+            <Route exact path="/dashboard" component={Dashboard}></Route>
             <Route exact path="/onesignal" component={Onesignal}></Route>
             <Route exact path="/prompting" component={Prompting}></Route>
             <Route
@@ -45,7 +45,7 @@ function App() {
           </Switch>
         </Fragment>
       </Router>
-    </div>
+    </Fragment>
   );
 }
 
