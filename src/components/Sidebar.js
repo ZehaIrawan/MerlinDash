@@ -1,19 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h3>Dashboard</h3>
-      <h3>Settings</h3>
-      <h3>Users</h3>
-      <h3>Delivery</h3>
-      <h3>OneSignal API</h3>
+      <Link to="/">Dashboard</Link>
+      <Link to="/settings">Settings</Link>
+      <Link to="/users">Users</Link>
+      <Link to="/delivery">Delivery</Link>
+      <Link to="/onesignal">OneSignal API</Link>
       Concepts
-      <h3>Prompting</h3>
-      <h3>Notification Appearance</h3>
-      <h3>Message Personalization</h3>
-      <h3>Player ID</h3>
-      <h3>Notification Behavior</h3>
+      <Link to="/prompting">Prompting</Link>
+      <Link to="/nappearance">Notification Appearance</Link>
+      <Link to="/mpersonalization">Message Personalization</Link>
+      <Link to="/playerid">Player ID</Link>
+      <Link to="/nbehavior">Notification Behavior</Link>
     </div>
   );
 };
