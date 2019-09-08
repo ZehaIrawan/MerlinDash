@@ -2,6 +2,8 @@
 
 > Concept Website for Push Notifications App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/08a457a1-4046-4aaa-a27c-e175b4c65abd/deploy-status)](https://app.netlify.com/sites/zealous-wozniak-264259/deploys)
+
 ![Merlindash](https://i.imgur.com/22YKS4U.png)
 
 ```bash
