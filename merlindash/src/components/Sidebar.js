@@ -16,18 +16,18 @@ import { Link } from 'react-router-dom';
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      USING ONESIGNAL
+      <p className="sidebar-title">USING ONESIGNAL</p>
       <ul>
         <li>
           <FaBroadcastTower></FaBroadcastTower>
-          <Link to="/dashboard">Dashboard</Link>
+          <Link to="/dashboard"> Dashboard</Link>
         </li>
         <li>
           <FaSlidersH></FaSlidersH> <Link to="/settings">Settings</Link>
         </li>
         <li>
           <FaUserCircle></FaUserCircle>
-          <Link to="/users">Users</Link>
+          <Link to="/users">  Users</Link>
         </li>
         <li>
           <FaBoxOpen></FaBoxOpen> <Link to="/">Delivery</Link>
@@ -36,7 +36,7 @@ const Sidebar = () => {
           <FaSignal></FaSignal> <Link to="/onesignal">OneSignal API</Link>
         </li>
       </ul>
-      CONCEPTS
+      <p className="sidebar-title"> CONCEPTS</p>
       <ul>
         <li>
           <FaInfo></FaInfo>

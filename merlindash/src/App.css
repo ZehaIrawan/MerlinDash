@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0px;
   height: 0px;
   box-sizing: border-box;
@@ -6,22 +9,28 @@ body {
 
 :root {
   --white: #ffffff;
+  --light-grey: #9ea5bd;
 }
 
 .container {
   display: flex;
   width: 100%;
-  height: 100vh;
 }
 
 .sidebar {
-  /* border: 1px solid tomato; */
-  width: 277px;
+  min-width: 220px;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(to bottom, #716dff, #a47dff);
-  padding-left: 41px;
-  padding-top: 140px;
+  padding: 40px;
+}
+
+.sidebar-title {
+  color: var(--white);
+}
+
+.sidebar ul {
+  margin-left: -20px;
 }
 
 .sidebar ul li {
@@ -44,14 +53,51 @@ body {
 .searchbar {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid tomato;
   height: 80px;
   background-color: var(--white);
 }
 
+.search-icon {
+  color: var(--light-grey);
+  width: 24px;
+  height: 24px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.search {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  margin-left: -200px;
+  height: 75px;
+}
+
+.cloud {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  height: 100%;
+  margin-right: -200px;
+}
+
+.cloud p {
+  padding-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .profile-pic {
+  margin-right: 50px;
+  padding-top: 20px;
   width: 40px;
   height: 40px;
+}
+
+.delivery {
+  background-color: #f3f3f3;
 }
 
 .delivery h1 {
@@ -63,31 +109,16 @@ body {
   justify-content: space-between;
   margin-left: 40px;
   margin-right: 40px;
+  flex-wrap: wrap;
 }
 
-.card1,
-.card2,
-.card3,
-.card4 {
+.card {
   width: 210px;
   height: 165px;
   border-radius: 8px;
-  background-image: linear-gradient(299deg, #736dff, #a97fff);
-}
-
-.card2 {
+  margin-bottom: 40px;
   box-shadow: 0 2px 5px 0 rgba(83, 97, 255, 0.05);
-  background-image: linear-gradient(299deg, #f7c598, #ff8886);
-}
-
-.card3 {
-  box-shadow: 0 2px 5px 0 rgba(83, 97, 255, 0.05);
-  background-image: linear-gradient(123deg, #f9b4bd, #9573db);
-}
-
-.card4 {
-  box-shadow: 0 2px 5px 0 rgba(83, 97, 255, 0.05);
-  background-image: linear-gradient(122deg, #44dec5, #4ebcfa);
+  color: var(--white);
 }
 
 .chart {
@@ -97,7 +128,6 @@ body {
 }
 
 .content {
-  border: 1px solid mediumaquamarine;
   width: 80%;
 }
 
@@ -111,6 +141,67 @@ body {
 .mpersonalization,
 .playerid,
 .nbehavior {
-  border: 1px solid mediumaquamarine;
   width: 80%;
+}
+
+.time-frame {
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  float: right;
+}
+
+.time-frame h2 {
+  font-size: 22px;
+}
+
+.time-frame p {
+  color: var(--light-grey);
+}
+
+.time-frame p:nth-child(3) {
+  border-bottom: 4px solid #5361ff;
+  color: #333d5f;
+}
+
+.innerbox {
+  padding: 10px 10px 10px 10px;
+}
+
+.line {
+  opacity: 0.5;
+  width: 100%;
+  border-bottom: 2px solid white;
+  position: relative;
+}
+
+svg {
+  color: var(--white);
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.smallDate {
+  margin-top: -20px;
+  font-size: 14px;
+}
+
+.bigDate {
+  font-size: 20px;
+}
+
+.card-title {
+  font-size: 13px;
+}
+
+.upload {
+  margin-top: -1px;
+  margin-left: 40px;
+  float: left;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  color: #333d5f;
 }

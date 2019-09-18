@@ -5,7 +5,14 @@ const Chart = ({ data }) => {
   return (
     <Line
       data={data}
-      options={{ maintainAspectRatio: false, responsive: true }}
+      options={{
+        maintainAspectRatio: false,
+        responsive: true,
+        legend: {
+          display: false,
+        },
+        backgroundColor: '#a27dff',
+      }}
     />
   );
 };
