@@ -6,6 +6,8 @@
 
 ![Merlindash](https://i.imgur.com/THWmjnF.jpg)
 
+Design by [Anastasiia Khazieieva ](https://dribbble.com/shots/6475026-Push-Notifications-Delivered)
+
 ```bash
 # Install dependencies
 cd merlindash
