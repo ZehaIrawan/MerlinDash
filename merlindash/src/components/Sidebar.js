@@ -13,6 +13,8 @@ import {
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+const disabled = null;
+
 const Sidebar = () => {
   return (
     <div className="sidebar">
@@ -20,45 +22,69 @@ const Sidebar = () => {
       <ul>
         <li>
           <FaBroadcastTower></FaBroadcastTower>
-          <Link to="/dashboard"> Dashboard</Link>
+          <Link className="disabledCursor" to={disabled}>
+            Dashboard
+          </Link>
         </li>
         <li>
-          <FaSlidersH></FaSlidersH> <Link to="/settings">Settings</Link>
+          <FaSlidersH></FaSlidersH>{' '}
+          <Link tclassName="disabledCursor" to={disabled}>
+            Settings
+          </Link>
         </li>
         <li>
           <FaUserCircle></FaUserCircle>
-          <Link to="/users">  Users</Link>
+          <Link className="disabledCursor" to={disabled}>
+            {' '}
+            Users
+          </Link>
         </li>
         <li>
           <FaBoxOpen></FaBoxOpen> <Link to="/">Delivery</Link>
         </li>
         <li>
-          <FaSignal></FaSignal> <Link to="/onesignal">OneSignal API</Link>
+          <FaSignal></FaSignal>{' '}
+          <Link className="disabledCursor" to={disabled}>
+            OneSignal API
+          </Link>
         </li>
       </ul>
       <p className="sidebar-title"> CONCEPTS</p>
       <ul>
         <li>
           <FaInfo></FaInfo>
-          <Link to="/prompting">Prompting</Link>
+          <Link className="disabledCursor" to={disabled}>
+            Prompting
+          </Link>
         </li>
         <li>
           <FaRegBell></FaRegBell>
-          <Link to="/nappearance">Notification Appearance</Link>
+          <Link className="disabledCursor" to={disabled}>
+            Notification Appearance
+          </Link>
         </li>
         <li>
           <FaComments></FaComments>
-          <Link to="/mpersonalization">Message Personalization</Link>
+          <Link className="disabledCursor" to={disabled}>
+            Message Personalization
+          </Link>
         </li>
         <li>
           <FaFingerprint></FaFingerprint>
-          <Link to="/playerid">Player ID</Link>
+          <Link className="disabledCursor" to={disabled}>
+            Player ID
+          </Link>
         </li>
         <li>
           <FaCommentDots></FaCommentDots>
-          <Link to="/nbehavior">Notification Behavior</Link>
+          <Link className="disabledCursor" to={disabled}>
+            Notification Behavior
+          </Link>
         </li>
       </ul>
+      <div className="footnote">
+        This is a mockup based on design by <a href="https://dribbble.com/shots/6475026-Push-Notifications-Delivered">Anastasiia Khazieieva</a>
+      </div>
     </div>
   );
 };
